@@ -1,4 +1,4 @@
-import { HandIcon, Square, Heart } from 'lucide-react';
+import { HandIcon, Square, Heart, MessageSquare } from 'lucide-react';
 
 export function HomeScreen({ onSelectModule }) {
   return (
@@ -29,8 +29,6 @@ export function HomeScreen({ onSelectModule }) {
           </div>
         </button>
 
-
-
         <button
           onClick={() => onSelectModule('social')}
           className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all transform hover:scale-105 group"
@@ -44,6 +42,22 @@ export function HomeScreen({ onSelectModule }) {
               Practice friendly gestures and greetings
             </p>
             <div className="mt-6 text-5xl">👋</div>
+          </div>
+        </button>
+
+        <button
+          onClick={() => onSelectModule('feedback')}
+          className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all transform hover:scale-105 group md:col-span-1"
+        >
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-red-600 rounded-full flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
+              <MessageSquare className="w-16 h-16 text-white" strokeWidth={3} />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-3">Feedback</h2>
+            <p className="text-lg text-gray-600 text-center">
+              Share your experience using Class Components
+            </p>
+            <div className="mt-6 text-5xl">📋</div>
           </div>
         </button>
       </div>
