@@ -4,6 +4,7 @@ import { CountingModule } from './components/CountingModule';
 import { SocialSkillsModule } from './components/SocialSkillsModule';
 import { FeedbackModuleClass } from './components/FeedbackModuleClass';
 import { CelebrationScreen } from './components/CelebrationScreen';
+import { BridgeBuilderGame } from './components/BridgeBuilderGame';
 import { createSession, logProgress } from './lib/supabase.js';
 import { ArrowLeft } from 'lucide-react';
 
@@ -74,6 +75,14 @@ function App() {
             sessionId={sessionId}
             onComplete={() => handleModuleComplete('Feedback')}
             onBack={handleBackToHome}
+          />
+        );
+      case 'bridge-builder':
+        return (
+          <BridgeBuilderGame
+            sessionId={sessionId}
+            onComplete={() => handleModuleComplete('Math: Bridge')}
+            onLogProgress={handleLogProgress}
           />
         );
       case 'celebration':

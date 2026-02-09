@@ -46,8 +46,24 @@ export function HomeScreen({ onSelectModule }) {
         </button>
 
         <button
+          onClick={() => onSelectModule('bridge-builder')}
+          className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all transform hover:scale-105 group"
+        >
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
+              <Square className="w-16 h-16 text-white" strokeWidth={3} />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-3">Bridge Builder</h2>
+            <p className="text-lg text-gray-600 text-center">
+              Fix the bridge to let the car cross!
+            </p>
+            <div className="mt-6 text-5xl">🌉</div>
+          </div>
+        </button>
+
+        <button
           onClick={() => onSelectModule('feedback')}
-          className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all transform hover:scale-105 group md:col-span-1"
+          className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all transform hover:scale-105 group"
         >
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-red-600 rounded-full flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
