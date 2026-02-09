@@ -39,7 +39,7 @@ export function MemberDetailScreen() {
 
                 {/* Course & Faculty Details Card */}
                 <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
-                    <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-8 text-white">
+                    <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-8 text-white">
                         <h2 className="text-2xl font-bold flex items-center gap-2">
                             <School className="w-6 h-6" />
                             Course Details
@@ -57,11 +57,11 @@ export function MemberDetailScreen() {
                             </div>
 
                             <div className="border-t border-gray-100 pt-6 mt-2">
-                                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4 text-emerald-600">Course Teacher</p>
+                                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4 text-blue-600">Course Teacher</p>
 
                                 <div className="flex items-start gap-4 mb-4">
-                                    <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                                        <Briefcase className="w-6 h-6 text-emerald-600" />
+                                    <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <Briefcase className="w-6 h-6 text-blue-600" />
                                     </div>
                                     <div>
                                         <p className="font-bold text-gray-900 text-lg">Dr. T. Senthil Kumar</p>
@@ -79,6 +79,38 @@ export function MemberDetailScreen() {
                                     <Mail className="w-5 h-5 text-gray-400" />
                                     <a href="mailto:t_senthilkumar@cb.amrita.edu" className="hover:text-emerald-600 transition-colors">t_senthilkumar@cb.amrita.edu</a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project Details Card */}
+                <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 lg:col-span-2">
+                    <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-8 text-white">
+                        <h2 className="text-2xl font-bold flex items-center gap-2">
+                            <Briefcase className="w-6 h-6" />
+                            Project Details
+                        </h2>
+                    </div>
+                    <div className="p-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Product Name</p>
+                                <p className="text-lg font-medium text-gray-800">Gesture Learning Platform</p>
+                            </div>
+                            <div>
+                                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">GitHub Repository</p>
+                                <a href="https://github.com/SiddarthGupta1/LABEVAL1" className="text-lg font-medium text-indigo-600 hover:text-indigo-800 transition-colors flex items-center gap-2">
+                                    View Source Code
+                                </a>
+                            </div>
+                            <div>
+                                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Academic Collaborator</p>
+                                <p className="text-lg font-medium text-gray-800">Dr. T. Senthil Kumar</p>
+                            </div>
+                            <div>
+                                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Industry Collaborator</p>
+                                <p className="text-lg font-medium text-gray-800">TBA</p>
                             </div>
                         </div>
                     </div>
