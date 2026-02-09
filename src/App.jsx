@@ -5,6 +5,8 @@ import { SocialSkillsModule } from './components/SocialSkillsModule';
 import { FeedbackModuleClass } from './components/FeedbackModuleClass';
 import { CelebrationScreen } from './components/CelebrationScreen';
 import { BridgeBuilderGame } from './components/BridgeBuilderGame';
+import { ProductDescriptionScreen } from './components/ProductDescriptionScreen';
+import { MemberDetailScreen } from './components/MemberDetailScreen';
 import { createSession, logProgress } from './lib/supabase.js';
 import { ArrowLeft } from 'lucide-react';
 
@@ -92,6 +94,10 @@ function App() {
             onContinue={handleBackToHome}
           />
         );
+      case 'product-description':
+        return <ProductDescriptionScreen />;
+      case 'member-detail':
+        return <MemberDetailScreen />;
       default:
         return <HomeScreen onSelectModule={handleSelectModule} />;
     }
